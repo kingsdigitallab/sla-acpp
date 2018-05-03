@@ -1,0 +1,69 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../sass/screen.scss */
+.sla {
+  background: #5a6469;
+  color: #cdd7dc;
+  font-family: "KingsCaslon", serif;
+  font-size: 1.25rem;
+  height: 100%;
+  padding: 1.5rem 0 1.5rem 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+/* line 25, ../sass/screen.scss */
+.sla a:hover,
+.sla a:focus {
+  color: #009fc2;
+}
+/* line 30, ../sass/screen.scss */
+.sla a:active,
+.sla a:hover {
+  outline: 0;
+}
+/* line 35, ../sass/screen.scss */
+.sla a {
+  background-color: transparent;
+  color: #cdd7dc;
+}
+
+/* line 41, ../sass/screen.scss */
+.cookies-box.hide {
+  display: none;
+}
+
+/* line 45, ../sass/screen.scss */
+.cookies-box {
+  background: #3f464a;
+  bottom: 0;
+  color: #cdd7dc;
+  font-family: "KingsCaslon", serif;
+  font-size: 1.25rem;
+  margin: 0;
+  opacity: 0.9;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+/* line 57, ../sass/screen.scss */
+.cookies-box p {
+  margin-bottom: 1.5rem;
+}
+/* line 60, ../sass/screen.scss */
+.cookies-box p a:hover,
+.cookies-box p a:focus {
+  color: #009fc2;
+}
+/* line 65, ../sass/screen.scss */
+.cookies-box p a:active,
+.cookies-box p a:hover {
+  outline: 0;
+}
+/* line 70, ../sass/screen.scss */
+.cookies-box p a {
+  background-color: transparent;
+  color: #cdd7dc;
+}
