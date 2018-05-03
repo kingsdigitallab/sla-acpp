@@ -9,7 +9,7 @@ $font-family: 'KingsCaslon', serif;
 $font-size: 1.25rem;
 
 $hover-colour: #009fc2;
-$link-colour: #cdd7dc;
+$link-colour: $hover-colour;
 
 .sla {
     background: #5a6469;
