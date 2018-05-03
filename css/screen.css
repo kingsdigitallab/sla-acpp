@@ -44,26 +44,22 @@
   font-family: "KingsCaslon", serif;
   font-size: 1.25rem;
   margin: 0;
-  opacity: 0.9;
+  opacity: 0.8;
   position: fixed;
   text-align: center;
   width: 100%;
 }
-/* line 58, ../sass/screen.scss */
-.cookies-box p {
-  margin-bottom: 1.5rem;
-}
-/* line 61, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .cookies-box p a:hover,
 .cookies-box p a:focus {
   color: #009fc2;
 }
-/* line 66, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .cookies-box p a:active,
 .cookies-box p a:hover {
   outline: 0;
 }
-/* line 71, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .cookies-box p a {
   background-color: transparent;
   color: #cdd7dc;

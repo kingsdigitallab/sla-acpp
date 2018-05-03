@@ -35,10 +35,10 @@ function addSLA() {
 
     var a = document.createElement('a')
     a.href = kdlUrl + 'how-we-work/kdl-designed-developed-and-maintained/'
-    a.innerHTML = 'maintained'
+    a.innerHTML = 'maintained by'
 
     p.appendChild(a)
-    p.appendChild(document.createTextNode(' by '))
+    p.appendChild(document.createTextNode(' '))
 
     a = document.createElement('a')
     a.href = kdlUrl
@@ -63,19 +63,24 @@ function addCookieDisclaimer() {
 
     p = document.createElement('p')
 
+    var button = document.createElement('button')
+    button.className = 'button'
+    button.innerHTML = 'I Accept'
+    button.id = 'close-cookie-disclaimer'
+    button.type = 'button'
+
+    p.appendChild(button)
+
+    div.appendChild(p)
+
+    p = document.createElement('p')
+
     var a = document.createElement('a')
     a.className = 'button'
     a.href = '/privacy-cookie-policy/'
     a.innerHTML = 'Privacy &amp; Cookie Policy'
 
-    var button = document.createElement('button')
-    button.className = 'button'
-    button.innerHTML = 'I understand'
-    button.id = 'close-cookie-disclaimer'
-    button.type = 'button'
-
     p.appendChild(a)
-    p.appendChild(button)
 
     div.appendChild(p)
 

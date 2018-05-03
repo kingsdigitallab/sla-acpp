@@ -50,14 +50,12 @@ $link-colour: #cdd7dc;
     font-family: $font-family;
     font-size: $font-size;
     margin: 0;
-    opacity: 0.9;
+    opacity: 0.8;
     position: fixed;
     text-align: center;
     width: 100%;
 
     p {
-        margin-bottom: 1.5rem;
-
         a:hover,
         a:focus {
             color: $hover-colour;
