@@ -28,14 +28,15 @@
 .sla a {
   background-color: transparent;
   color: #cdd7dc;
+  text-decoration: none;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .cookies-box.hide {
   display: none;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .cookies-box {
   background: #3f464a;
   bottom: 0;
@@ -48,22 +49,23 @@
   text-align: center;
   width: 100%;
 }
-/* line 57, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .cookies-box p {
   margin-bottom: 1.5rem;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .cookies-box p a:hover,
 .cookies-box p a:focus {
   color: #009fc2;
 }
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .cookies-box p a:active,
 .cookies-box p a:hover {
   outline: 0;
 }
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .cookies-box p a {
   background-color: transparent;
   color: #cdd7dc;
+  text-decoration: none;
 }

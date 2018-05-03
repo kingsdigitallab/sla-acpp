@@ -35,6 +35,7 @@ $link-colour: #cdd7dc;
     a {
         background-color: transparent;
         color: $link-colour;
+        text-decoration: none;
     }
 }
 
@@ -70,6 +71,7 @@ $link-colour: #cdd7dc;
         a {
             background-color: transparent;
             color: $link-colour;
+            text-decoration: none;
         }
     }
 }
