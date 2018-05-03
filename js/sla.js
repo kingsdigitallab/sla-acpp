@@ -83,44 +83,33 @@ function addCookieDisclaimer() {
 }
 
 function showCookieDisclaimer() {
-    var cookieCName = 'sla-cookie'
-    var cookieCValue = 'sla-cookie-set'
+    var key = 'cookie-disclaimer'
+    var value = 'cookie-disclaimer-set'
 
     var disclaimer = document.getElementById('cookie-disclaimer')
 
-    var sla = getCookie(cookieCName)
+    var cookieDisclaimerAccepted = getStorageItem(key)
 
-    if (!sla) {
+    if (!cookieDisclaimerAccepted) {
         disclaimer.className = disclaimer.className.replace(/ hide/, '')
     }
 
     document.getElementById('close-cookie-disclaimer').onclick = function() {
-        setCookie(cookieCName, cookieCValue, 30)
+        setStorageItem(key, value)
         disclaimer.className += ' hide'
     }
 }
 
-function getCookie(cname) {
-    var name = cname + '='
-    var ca = document.cookie.split(';')
-
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i]
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1)
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length)
-        }
+function getStorageItem(key) {
+    if (typeof Storage !== 'undefined') {
+        return localStorage.getItem(key)
     }
 
-    return ''
+    return null
 }
 
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date()
-    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000)
-
-    var expires = 'expires=' + d.toUTCString()
-    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/'
+function setStorageItem(key, value) {
+    if (typeof Storage !== 'undefined') {
+        localStorage.setItem(key, value)
+    }
 }
