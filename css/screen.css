@@ -5,11 +5,12 @@
 /* line 14, ../sass/screen.scss */
 .sla {
   background: #5a6469;
+  bottom: 0;
   color: #cdd7dc;
   font-family: "KingsCaslon", serif;
   font-size: 1.25rem;
   padding: 1.5rem 0 1.5rem 0;
-  position: absolute;
+  position: relative;
   text-align: center;
   width: 100%;
 }

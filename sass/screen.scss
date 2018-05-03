@@ -13,12 +13,12 @@ $link-colour: #cdd7dc;
 
 .sla {
     background: #5a6469;
+    bottom: 0;
     color: $colour;
     font-family: $font-family;
     font-size: $font-size;
-    // height: 100%;
     padding: 1.5rem 0 1.5rem 0;
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 100%;
 
