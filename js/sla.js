@@ -88,15 +88,10 @@ function addCookieDisclaimer() {
 
         this.classList.toggle('open')
         this.classList.toggle('close')
-
-        document
-            .getElementById('privacy-policy')
-            .contentDocument.getElementById('cookie-website-url').innerHTML =
-            window.location.hostname
     }
     a.href = '#'
     a.id = 'show-privacy-policy'
-    a.innerHTML = 'Privacy &amp; Cookie Policy'
+    a.innerHTML = 'Privacy &amp; Cookie Policy ' + window.location.hostname
 
     p.appendChild(a)
 
