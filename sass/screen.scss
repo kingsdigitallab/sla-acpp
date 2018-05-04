@@ -46,7 +46,6 @@ $link-colour: $hover-colour;
 
 .cookies-box.large {
     height: 100%;
-    z-index: 1000;
 }
 
 .cookies-box {
@@ -74,7 +73,7 @@ $link-colour: $hover-colour;
 
     iframe {
         border: none;
-        height: 100%;
+        height: 85%;
         width: 75%;
     }
 
