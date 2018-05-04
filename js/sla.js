@@ -25,6 +25,7 @@ function addCSS() {
 
 function addSLA() {
     var kdlUrl = 'https://www.kdl.kcl.ac.uk/'
+
     var div = document.createElement('div')
     div.className = 'sla'
 
@@ -76,13 +77,33 @@ function addCookieDisclaimer() {
     p = document.createElement('p')
 
     var a = document.createElement('a')
-    a.className = 'button'
-    a.href = '/privacy-cookie-policy/'
+    a.className = 'button open'
+    a.onclick = function() {
+        document.getElementById('privacy-policy').classList.toggle('hide')
+        document.getElementById('cookie-disclaimer').classList.toggle('large')
+
+        this.classList.toggle('open')
+        this.classList.toggle('close')
+
+        document
+            .getElementById('privacy-policy')
+            .contentDocument.getElementById('cookie-website-url').innerHTML =
+            window.location.hostname
+    }
+    a.href = '#'
+    a.id = 'show-privacy-policy'
     a.innerHTML = 'Privacy &amp; Cookie Policy'
 
     p.appendChild(a)
 
     div.appendChild(p)
+
+    var iframe = document.createElement('iframe')
+    iframe.className = 'hide'
+    iframe.id = 'privacy-policy'
+    iframe.src = 'html/privacy-policy.html'
+
+    div.append(iframe)
 
     body.appendChild(div)
 }
