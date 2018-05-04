@@ -11,16 +11,20 @@ body.onload = function() {
 }
 
 function addCSS() {
-    var scripts = document.getElementsByTagName('script')
-    var jsFile = scripts[scripts.length - 1].src.split('?')[0]
-
     var link = document.createElement('link')
-    link.href = jsFile.substr(0, jsFile.lastIndexOf('/')) + '/../css/screen.css'
+    link.href = getBasePath() + '/../css/screen.css'
     link.type = 'text/css'
     link.rel = 'stylesheet'
     link.media = 'screen, projection'
 
     document.getElementsByTagName('head')[0].appendChild(link)
+}
+
+function getBasePath() {
+    var scripts = document.getElementsByTagName('script')
+    var jsFile = scripts[scripts.length - 1].src.split('?')[0]
+
+    return jsFile.substr(0, jsFile.lastIndexOf('/'))
 }
 
 function addSLA() {
@@ -101,7 +105,7 @@ function addCookieDisclaimer() {
     var iframe = document.createElement('iframe')
     iframe.className = 'hide'
     iframe.id = 'privacy-policy'
-    iframe.src = 'html/privacy-policy.html'
+    iframe.src = getBasePath() + '/../html/privacy-policy.html'
 
     div.append(iframe)
 
