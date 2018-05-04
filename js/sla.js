@@ -91,7 +91,7 @@ function addCookieDisclaimer() {
     }
     a.href = '#'
     a.id = 'show-privacy-policy'
-    a.innerHTML = 'Privacy &amp; Cookie Policy ' + window.location.hostname
+    a.innerHTML = 'Privacy &amp; Cookie Policy for ' + window.location.hostname
 
     p.appendChild(a)
 
