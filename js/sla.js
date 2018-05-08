@@ -34,22 +34,14 @@ function addSLA() {
     div.className = 'sla'
 
     var p = document.createElement('p')
-    p.innerHTML =
-        'This project is no longer active. ' +
-        'It is currently supported by a Service Level Agreement and is '
+    p.innerHTML = 'This site is '
 
     var a = document.createElement('a')
     a.href = kdlUrl + 'how-we-work/kdl-designed-developed-and-maintained/'
-    a.innerHTML = 'maintained by'
+    a.innerHTML = "maintained by King's Digital Lab"
 
     p.appendChild(a)
-    p.appendChild(document.createTextNode(' '))
-
-    a = document.createElement('a')
-    a.href = kdlUrl
-    a.innerHTML = "King's Digital Lab"
-
-    p.appendChild(a)
+    p.appendChild(document.createTextNode(' under a Service Level Agreement.'))
 
     div.appendChild(p)
 
