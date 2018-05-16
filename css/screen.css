@@ -2,114 +2,117 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 15, ../sass/screen.scss */
+/* Colours */
+/* line 20, ../sass/screen.scss */
+.cookies-box {
+  background: rgba(63, 70, 74, 0.9);
+  bottom: 0;
+  color: #fefefe;
+  font-family: 'KingsCaslon', serif;
+  font-size: 1.25rem;
+  margin: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 11rem;
+  transition: 0.5s ease-in-out;
+}
+/* line 32, ../sass/screen.scss */
+.cookies-box .close:before {
+  content: 'Close ';
+}
+/* line 35, ../sass/screen.scss */
+.cookies-box .open:before {
+  content: 'Read our ';
+}
+/* line 38, ../sass/screen.scss */
+.cookies-box .hide {
+  display: none;
+  transition: 1s ease-in-out;
+}
+/* line 42, ../sass/screen.scss */
+.cookies-box.large {
+  height: 100%;
+  z-index: 1000;
+  transition: 1s ease-in-out;
+}
+/* line 47, ../sass/screen.scss */
+.cookies-box iframe {
+  border: none;
+  height: 85%;
+  width: 95%;
+  transition: 1s ease-in-out;
+}
+/* line 54, ../sass/screen.scss */
+.cookies-box p a {
+  background-color: transparent;
+  color: #cdd7dc;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+/* line 59, ../sass/screen.scss */
+.cookies-box p a:hover, .cookies-box p a:focus {
+  color: #00b9e1;
+}
+/* line 64, ../sass/screen.scss */
+.cookies-box button {
+  border-radius: 0;
+  padding: 0.85em 2em;
+  font-size: 1rem;
+  background-color: #5a6469;
+  font-weight: bold;
+  color: #fefefe;
+  border: 0;
+  font-family: 'KingsBureauGrot', sans-serif;
+}
+/* line 73, ../sass/screen.scss */
+.cookies-box button:hover, .cookies-box button:focus {
+  background-color: #77878e;
+}
+
+/* line 82, ../sass/screen.scss */
+.privacy-policy {
+  background: #fefefe;
+  font-family: 'KingsCaslon', serif;
+  font-size: 1.5rem;
+  padding: 3rem;
+  color: #5a6469;
+}
+/* line 88, ../sass/screen.scss */
+.privacy-policy a {
+  background-color: transparent;
+  color: #00b9e1;
+  text-decoration: none;
+}
+/* line 92, ../sass/screen.scss */
+.privacy-policy a:hover, .privacy-policy a:focus {
+  color: #008fae;
+}
+/* line 96, ../sass/screen.scss */
+.privacy-policy h2 {
+  font-family: 'KingsBureauGrot', sans-serif;
+  font-size: 1.75rem;
+  margin: 3rem 0 0.5rem 0;
+}
+
+/* line 103, ../sass/screen.scss */
 .sla {
   background: #5a6469;
   bottom: 0;
-  color: #cdd7dc;
-  font-family: "KingsCaslon", serif;
+  color: #fefefe;
+  font-family: 'KingsCaslon', serif;
   font-size: 1.25rem;
   padding: 1.5rem 0 1.5rem 0;
   position: relative;
   text-align: center;
   width: 100%;
 }
-/* line 26, ../sass/screen.scss */
-.sla a:hover,
-.sla a:focus {
-  color: #009fc2;
-}
-/* line 31, ../sass/screen.scss */
-.sla a:active,
-.sla a:hover {
-  outline: 0;
-}
-/* line 36, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .sla a {
-  background-color: transparent;
-  color: #009fc2;
-  text-decoration: none;
-}
-
-/* line 43, ../sass/screen.scss */
-.cookies-box.hide {
-  display: none;
-}
-
-/* line 47, ../sass/screen.scss */
-.cookies-box.large {
-  height: 100%;
-  z-index: 1000;
-}
-
-/* line 52, ../sass/screen.scss */
-.cookies-box {
-  background: #3f464a;
-  bottom: 0;
   color: #cdd7dc;
-  font-family: "KingsCaslon", serif;
-  font-size: 1.25rem;
-  margin: 0;
-  opacity: 0.9;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-}
-/* line 64, ../sass/screen.scss */
-.cookies-box .close:before {
-  content: 'Hide the ';
-}
-/* line 67, ../sass/screen.scss */
-.cookies-box .open:before {
-  content: 'Show the ';
-}
-/* line 71, ../sass/screen.scss */
-.cookies-box .hide {
-  display: none;
-}
-/* line 75, ../sass/screen.scss */
-.cookies-box iframe {
-  border: none;
-  height: 85%;
-  width: 75%;
-}
-/* line 82, ../sass/screen.scss */
-.cookies-box p a:hover,
-.cookies-box p a:focus {
-  color: #009fc2;
-}
-/* line 87, ../sass/screen.scss */
-.cookies-box p a:active,
-.cookies-box p a:hover {
-  outline: 0;
-}
-/* line 92, ../sass/screen.scss */
-.cookies-box p a {
-  background-color: transparent;
-  color: #009fc2;
   text-decoration: none;
-}
-
-/* line 100, ../sass/screen.scss */
-.privacy-policy {
-  background: #3f464a;
-  color: #cdd7dc;
-  font-family: "KingsCaslon", serif;
-  font-size: 1.25rem;
-}
-/* line 106, ../sass/screen.scss */
-.privacy-policy a:hover,
-.privacy-policy a:focus {
-  color: #009fc2;
-}
-/* line 111, ../sass/screen.scss */
-.privacy-policy a:active,
-.privacy-policy a:hover {
-  outline: 0;
 }
 /* line 116, ../sass/screen.scss */
-.privacy-policy a {
-  background-color: transparent;
-  color: #009fc2;
-  text-decoration: none;
+.sla a:hover, .sla a:focus {
+  color: #00b9e1;
 }

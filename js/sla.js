@@ -38,13 +38,13 @@ function addSLA() {
 
     var a = document.createElement('a')
     a.href = kdlUrl + 'how-we-work/kdl-designed-developed-and-maintained/'
-    a.innerHTML = "maintained by King's Digital Lab"
+    a.innerHTML = "maintained under a Service Level Agreement "
 
     p.appendChild(a)
-    p.appendChild(document.createTextNode(' under a Service Level Agreement.'))
+    p.appendChild(document.createTextNode(' by Kings Digital Lab '))
 
     div.appendChild(p)
-
+    
     body.appendChild(div)
 }
 
@@ -56,18 +56,7 @@ function addCookieDisclaimer() {
     var p = document.createElement('p')
     p.innerHTML = 'We use cookies to track usage and preferences.'
 
-    div.appendChild(p)
-
-    p = document.createElement('p')
-
-    var button = document.createElement('button')
-    button.className = 'button'
-    button.innerHTML = 'I Accept'
-    button.id = 'close-cookie-disclaimer'
-    button.type = 'button'
-
-    p.appendChild(button)
-
+    
     div.appendChild(p)
 
     p = document.createElement('p')
@@ -83,9 +72,20 @@ function addCookieDisclaimer() {
     }
     a.href = '#'
     a.id = 'show-privacy-policy'
-    a.innerHTML = 'Privacy &amp; Cookie Policy for ' + window.location.hostname
+    a.innerHTML = 'Privacy &amp; Cookie Policy' + window.location.hostname
 
     p.appendChild(a)
+div.appendChild(p)
+
+    p = document.createElement('p')
+
+    var button = document.createElement('button')
+    button.className = 'button'
+    button.innerHTML = 'I Accept'
+    button.id = 'close-cookie-disclaimer'
+    button.type = 'button'
+
+    p.appendChild(button)
 
     div.appendChild(p)
 
