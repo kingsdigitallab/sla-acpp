@@ -38,13 +38,21 @@ function addSLA() {
 
     var a = document.createElement('a')
     a.href = kdlUrl + 'how-we-work/kdl-designed-developed-and-maintained/'
-    a.innerHTML = "maintained under a Service Level Agreement "
+    a.innerHTML = 'maintained'
 
     p.appendChild(a)
-    p.appendChild(document.createTextNode(' by Kings Digital Lab '))
+    p.appendChild(
+        document.createTextNode(' under a Service Level Agreement by ')
+    )
+
+    a = document.createElement('a')
+    a.href = kdlUrl
+    a.innerHTML = 'Kings Digital Lab'
+
+    p.appendChild(a)
 
     div.appendChild(p)
-    
+
     body.appendChild(div)
 }
 
@@ -56,7 +64,6 @@ function addCookieDisclaimer() {
     var p = document.createElement('p')
     p.innerHTML = 'We use cookies to track usage and preferences.'
 
-    
     div.appendChild(p)
 
     p = document.createElement('p')
@@ -75,7 +82,8 @@ function addCookieDisclaimer() {
     a.innerHTML = 'Privacy &amp; Cookie Policy' + window.location.hostname
 
     p.appendChild(a)
-div.appendChild(p)
+
+    div.appendChild(p)
 
     p = document.createElement('p')
 

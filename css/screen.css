@@ -2,8 +2,48 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/** Importing King's Fonts **/
+/** King's Bureau Grotesque **/
+@font-face {
+  font-family: 'KingsBureauGrot';
+  src: url("../fonts/KingsBureauGrot/KingsBureauGrot-ThreeSeven.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'KingsBureauGrot';
+  src: url("../fonts/KingsBureauGrot/KingsBureauGrot-ThrSevenItal.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-style: italic;
+}
+/** King's Caslon **/
+@font-face {
+  font-family: 'KingsCaslon';
+  src: url("../fonts/KingsCaslon_V1.560/KingsCaslon.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'KingsCaslon';
+  src: url("../fonts/KingsCaslon_V1.560/KingsCaslonItalic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-style: italic;
+}
+@font-face {
+  font-family: 'KingsCaslon';
+  src: url("../fonts/KingsCaslon_V1.560/KingsCaslonSemiBold.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'KingsCaslon';
+  src: url("../fonts/KingsCaslon_V1.560/KingsCaslonSemiBoldItalic.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: bold;
+  font-style: italic;
+}
 /* Colours */
-/* line 20, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 .cookies-box {
   background: rgba(63, 70, 74, 0.9);
   bottom: 0;
@@ -17,60 +57,61 @@
   height: 11rem;
   transition: 0.5s ease-in-out;
 }
-/* line 32, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 .cookies-box .close:before {
   content: 'Close ';
 }
-/* line 35, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .cookies-box .open:before {
   content: 'Read our ';
 }
-/* line 38, ../sass/screen.scss */
-.cookies-box .hide {
+/* line 34, ../sass/screen.scss */
+.cookies-box.hide {
   display: none;
   transition: 1s ease-in-out;
 }
-/* line 42, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .cookies-box.large {
   height: 100%;
   z-index: 1000;
   transition: 1s ease-in-out;
 }
-/* line 47, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .cookies-box iframe {
   border: none;
   height: 85%;
   width: 95%;
   transition: 1s ease-in-out;
 }
-/* line 54, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .cookies-box p a {
   background-color: transparent;
   color: #cdd7dc;
   text-decoration: none;
   font-size: 1.25rem;
 }
-/* line 59, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .cookies-box p a:hover, .cookies-box p a:focus {
   color: #00b9e1;
 }
-/* line 64, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .cookies-box button {
   border-radius: 0;
   padding: 0.85em 2em;
   font-size: 1rem;
+  font-weight: normal;
   background-color: #5a6469;
-  font-weight: bold;
   color: #fefefe;
   border: 0;
+  cursor: pointer;
   font-family: 'KingsBureauGrot', sans-serif;
 }
-/* line 73, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .cookies-box button:hover, .cookies-box button:focus {
   background-color: #77878e;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .privacy-policy {
   background: #fefefe;
   font-family: 'KingsCaslon', serif;
@@ -78,27 +119,27 @@
   padding: 3rem;
   color: #5a6469;
 }
-/* line 88, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .privacy-policy a {
   background-color: transparent;
   color: #00b9e1;
   text-decoration: none;
 }
-/* line 92, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .privacy-policy a:hover, .privacy-policy a:focus {
   color: #008fae;
 }
-/* line 96, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .privacy-policy h2 {
   font-family: 'KingsBureauGrot', sans-serif;
   font-size: 1.75rem;
+  font-weight: normal;
   margin: 3rem 0 0.5rem 0;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .sla {
   background: #5a6469;
-  bottom: 0;
   color: #fefefe;
   font-family: 'KingsCaslon', serif;
   font-size: 1.25rem;
@@ -107,12 +148,12 @@
   text-align: center;
   width: 100%;
 }
-/* line 113, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .sla a {
   color: #cdd7dc;
   text-decoration: none;
 }
-/* line 116, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .sla a:hover, .sla a:focus {
   color: #00b9e1;
 }

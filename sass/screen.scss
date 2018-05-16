@@ -3,121 +3,117 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-
-
+@import 'fonts';
 
 /* Colours */
 $gray4: #3f464a;
-$gray3:#5a6469;
+$gray3: #5a6469;
 $gray2: #77878e;
 $gray1: #cdd7dc;
 $blue: #00b9e1;
 $white: #fefefe;
 
-
-
-
-.cookies-box{
-background: rgba($gray4, 0.9);
-bottom: 0;
-color: $white;
-font-family: 'KingsCaslon', serif;
-font-size: 1.25rem;
-margin: 0;
-position: fixed;
-text-align: center;
-width: 100%;
-height:11rem;
-transition: 0.5s ease-in-out;
+.cookies-box {
+    background: rgba($gray4, 0.9);
+    bottom: 0;
+    color: $white;
+    font-family: 'KingsCaslon', serif;
+    font-size: 1.25rem;
+    margin: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 11rem;
+    transition: 0.5s ease-in-out;
     .close:before {
-    content: 'Close ';
+        content: 'Close ';
     }
     .open:before {
-    content: 'Read our ';
+        content: 'Read our ';
     }
-    .hide {
-    display: none;
-    transition: 1s ease-in-out;
+    &.hide {
+        display: none;
+        transition: 1s ease-in-out;
     }
     &.large {
-    height: 100%;    
-    z-index: 1000;
-    transition: 1s ease-in-out;
+        height: 100%;
+        z-index: 1000;
+        transition: 1s ease-in-out;
     }
     iframe {
-    border: none;
-    height: 85%;
-    width: 95%;
-    transition: 1s ease-in-out;
+        border: none;
+        height: 85%;
+        width: 95%;
+        transition: 1s ease-in-out;
     }
     p {
         a {
-        background-color: transparent;
-        color: $gray1;
-        text-decoration: none;
-        font-size: 1.25rem;
-            &:hover, &:focus{
-            color: $blue;
+            background-color: transparent;
+            color: $gray1;
+            text-decoration: none;
+            font-size: 1.25rem;
+            &:hover,
+            &:focus {
+                color: $blue;
             }
         }
     }
-    button{
-    border-radius: 0;
-    padding: 0.85em 2em;
-    font-size: 1rem;
-    background-color: #5a6469;
-    font-weight: bold;
-    color: $white;
-    border: 0;
-    font-family: 'KingsBureauGrot', sans-serif;
-        &:hover, &:focus{
-        background-color: #77878e;
+    button {
+        border-radius: 0;
+        padding: 0.85em 2em;
+        font-size: 1rem;
+        font-weight: normal;
+        background-color: #5a6469;
+        color: $white;
+        border: 0;
+        cursor: pointer;
+        font-family: 'KingsBureauGrot', sans-serif;
+        &:hover,
+        &:focus {
+            background-color: #77878e;
         }
     }
-
 }
 
-
-
 .privacy-policy {
-background: $white;
-font-family: 'KingsCaslon', serif;
-font-size: 1.5rem;
-padding: 3rem;
-color: $gray3;
+    background: $white;
+    font-family: 'KingsCaslon', serif;
+    font-size: 1.5rem;
+    padding: 3rem;
+    color: $gray3;
     a {
-    background-color: transparent;
-    color: $blue;
-    text-decoration: none;
-        &:hover, &:focus{
-        color: darken($blue, 10%);
+        background-color: transparent;
+        color: $blue;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: darken($blue, 10%);
         }
     }
-    h2{
+    h2 {
         font-family: 'KingsBureauGrot', sans-serif;
         font-size: 1.75rem;
+        font-weight: normal;
         margin: 3rem 0 0.5rem 0;
     }
 }
 
 .sla {
-background: $gray3;
-bottom: 0;
-color: $white;
-font-family: 'KingsCaslon', serif;
-font-size: 1.25rem;
-padding: 1.5rem 0 1.5rem 0;
-position: relative;
-text-align: center;
-width: 100%;
+    background: $gray3;
+    // bottom: 0;
+    color: $white;
+    font-family: 'KingsCaslon', serif;
+    font-size: 1.25rem;
+    padding: 1.5rem 0 1.5rem 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
     a {
-    color: $gray1;
-    text-decoration: none;
-        &:hover, &:focus{
-        color: $blue;
+        color: $gray1;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: $blue;
         }
     }
 }
-
-
-       
