@@ -50,56 +50,59 @@
   color: #fefefe;
   font-family: 'KingsCaslon', serif;
   font-size: 1.25rem;
-  height: 11rem;
+  height: 10.5rem;
   margin: 0;
+  padding: 1rem 0;
   position: fixed;
   text-align: center;
   text-shadow: none;
   transition: 0.5s ease-in-out;
   width: 100%;
 }
-/* line 30, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .cookies-box.large {
   height: 100%;
   transition: 1s ease-in-out;
   z-index: 1000;
 }
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .cookies-box .close:before {
   content: 'Close ';
 }
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .cookies-box .open:before {
   content: 'Read our ';
 }
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .cookies-box iframe {
   border: none;
   height: 85%;
   max-height: 85%;
+  max-width: 768px;
   transition: 1s ease-in-out;
   width: 95%;
 }
-/* line 51, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .cookies-box iframe.hide {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: 1s ease-in-out;
 }
-/* line 60, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .cookies-box p a {
   background-color: transparent;
+  border: none;
   color: #cdd7dc;
   float: none;
   font-size: 1.25rem;
   text-decoration: none;
 }
-/* line 67, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .cookies-box p a:hover, .cookies-box p a:focus {
   color: #00b9e1;
 }
-/* line 74, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .cookies-box button {
   background-color: #5a6469;
   border-radius: 0;
@@ -111,38 +114,38 @@
   font-weight: normal;
   padding: 0.85em 2em;
 }
-/* line 85, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .cookies-box button:hover, .cookies-box button:focus {
   background-color: #77878e;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .privacy-policy {
   background: #fefefe;
   color: #5a6469;
   font-family: 'KingsCaslon', serif;
-  font-size: 1.5rem;
-  padding: 3rem;
+  font-size: 1.2rem;
+  padding: 1rem 0.5rem;
 }
-/* line 99, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .privacy-policy a {
   background-color: transparent;
   color: #00b9e1;
   text-decoration: none;
 }
-/* line 104, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .privacy-policy a:hover, .privacy-policy a:focus {
   color: #008fae;
 }
-/* line 110, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .privacy-policy h2 {
   font-family: 'KingsBureauGrot', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: normal;
   margin: 3rem 0 0.5rem 0;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .sla {
   background: #5a6469;
   color: #fefefe;
@@ -153,12 +156,12 @@
   text-align: center;
   width: 100%;
 }
-/* line 128, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .sla a {
   color: #cdd7dc;
   text-decoration: none;
 }
-/* line 132, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .sla a:hover, .sla a:focus {
   color: #00b9e1;
 }
