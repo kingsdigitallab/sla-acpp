@@ -7,7 +7,7 @@ To add to a site, add the `script` declaration as the last element of `body`.
 For the stable version of the script add:
 
 ```
-<script defer="defer" src="https://cdn.rawgit.com/kingsdigitallab/sla-acpp/master/js/sla.js" type="text/javascript"></script>
+<script defer="defer" src="https://kdl.kcl.ac.uk/sla-acpp/js/sla.js" type="text/javascript"></script>
 ```
 
 For the development version of the script:
