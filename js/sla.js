@@ -47,7 +47,7 @@ function addSLA() {
 
     a = document.createElement('a')
     a.href = kdlUrl
-    a.innerHTML = 'Kings Digital Lab'
+    a.innerHTML = "King's Digital Lab"
 
     p.appendChild(a)
 
