@@ -130,7 +130,7 @@ $white: #fefefe;
     color: $white;
     font-family: 'KingsCaslon', serif;
     font-size: 1.25rem !important;
-    padding: 0.1rem 0 0.1rem 0 !important;
+    padding: 0.5rem !important;
     position: relative;
     text-align: center;
     width: 100%;
@@ -143,6 +143,11 @@ $white: #fefefe;
         &:focus {
             color: $blue !important;
         }
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
     }
 }
 
