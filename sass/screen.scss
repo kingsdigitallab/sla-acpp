@@ -64,10 +64,11 @@ $white: #fefefe;
     p {
         margin: 1rem 0;
         line-height: 1;
+
         a {
             background-color: transparent;
             border: none;
-            color: $gray1;
+            color: $gray1 !important;
             float: none;
             font-size: 1.25rem;
             text-decoration: none;
@@ -75,7 +76,7 @@ $white: #fefefe;
             padding: 0;
             &:hover,
             &:focus {
-                color: $blue;
+                color: $blue !important;
             }
         }
     }
@@ -84,16 +85,16 @@ $white: #fefefe;
         background-color: #5a6469;
         border-radius: 0;
         border: 0;
-        color: $white;
+        color: $white !important;
         cursor: pointer;
         font-family: 'KingsBureauGrot', sans-serif;
         font-size: 1rem;
-        font-weight: normal;
+        font-weight: normal !important;
         padding: 0.85em 2em;
         margin: 0;
         &:hover,
         &:focus {
-            background-color: #77878e;
+            background-color: $gray2 !important;
         }
     }
 }
@@ -128,19 +129,19 @@ $white: #fefefe;
     background: $gray3;
     color: $white;
     font-family: 'KingsCaslon', serif;
-    font-size: 1.25rem;
-    padding: 0.1rem 0 0.1rem 0;
+    font-size: 1.25rem !important;
+    padding: 0.1rem 0 0.1rem 0 !important;
     position: relative;
     text-align: center;
     width: 100%;
 
     a {
-        color: $gray1;
+        color: $gray1 !important;
         text-decoration: none;
 
         &:hover,
         &:focus {
-            color: $blue;
+            color: $blue !important;
         }
     }
 }
