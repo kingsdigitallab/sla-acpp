@@ -17,7 +17,7 @@ $white: #fefefe;
     background: rgba($gray4, 0.9);
     bottom: 0;
     color: $white;
-    font-family: 'KingsCaslon', serif;
+    // font-family: 'KingsCaslon', serif;
     font-size: 1.25rem;
     margin: 0;
     padding: 1rem 0;
@@ -26,6 +26,7 @@ $white: #fefefe;
     text-shadow: none;
     transition: 0.5s ease-in-out;
     width: 100%;
+    z-index: 1000;
 
     &.hide {
         display: none;
@@ -87,7 +88,7 @@ $white: #fefefe;
         border: 0;
         color: $white !important;
         cursor: pointer;
-        font-family: 'KingsBureauGrot', sans-serif;
+        // font-family: 'KingsBureauGrot', sans-serif;
         font-size: 1rem;
         font-weight: normal !important;
         padding: 0.85em 2em;
@@ -128,7 +129,7 @@ $white: #fefefe;
 .sla {
     background: $gray3;
     color: $white;
-    font-family: 'KingsCaslon', serif;
+    // font-family: 'KingsCaslon', serif;
     font-size: 1.25rem !important;
     padding: 0.5rem !important;
     position: relative;
