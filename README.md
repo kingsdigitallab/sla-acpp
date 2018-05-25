@@ -15,3 +15,5 @@ For the development version of the script:
 ```
 <script defer="defer" src="https://rawgit.com/kingsdigitallab/sla-acpp/develop/js/sla.js" type="text/javascript"></script>
 ```
+
+The shell script `bin/add.sh` simplifies the process of adding the `<script>` to any files that might need it. Run `bin/add.sh FILENAME` to add it to a file. The shell script has two optional arguments, `-d` and `-x`. Use `-d` to add the development version of `sla.js`. Use `-x` when adding to an XML file.
