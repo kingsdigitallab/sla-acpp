@@ -48,7 +48,6 @@
   background: rgba(63, 70, 74, 0.9);
   bottom: 0;
   color: #fefefe;
-  font-size: 1.25rem;
   margin: 0;
   padding: 1rem 0;
   position: fixed;
@@ -103,7 +102,6 @@
   border: none;
   color: #cdd7dc !important;
   float: none;
-  font-size: 1.25rem;
   text-decoration: none !important;
   margin: 0;
   padding: 0;
@@ -119,7 +117,6 @@
   border: 0;
   color: #fefefe !important;
   cursor: pointer;
-  font-size: 1rem;
   font-weight: normal !important;
   padding: 0.85em 2em;
   margin: 0;
@@ -159,7 +156,6 @@
 .sla {
   background: #5a6469;
   color: #fefefe;
-  font-size: 1.25rem !important;
   padding: 0.5rem !important;
   position: relative;
   text-align: center;
