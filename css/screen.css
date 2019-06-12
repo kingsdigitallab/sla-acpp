@@ -10,12 +10,14 @@
   /* Safari, Android, iOS */
   font-weight: normal;
 }
+
 @font-face {
   font-family: 'KingsBureauGrot';
   src: url("../fonts/KingsBureauGrot/KingsBureauGrot-ThrSevenItal.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-style: italic;
 }
+
 /** King's Caslon **/
 @font-face {
   font-family: 'KingsCaslon';
@@ -23,18 +25,21 @@
   /* Safari, Android, iOS */
   font-weight: normal;
 }
+
 @font-face {
   font-family: 'KingsCaslon';
   src: url("../fonts/KingsCaslon_V1.560/KingsCaslonItalic.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-style: italic;
 }
+
 @font-face {
   font-family: 'KingsCaslon';
   src: url("../fonts/KingsCaslon_V1.560/KingsCaslonSemiBold.ttf") format("truetype");
   /* Safari, Android, iOS */
   font-weight: bold;
 }
+
 @font-face {
   font-family: 'KingsCaslon';
   src: url("../fonts/KingsCaslon_V1.560/KingsCaslonSemiBoldItalic.ttf") format("truetype");
@@ -42,6 +47,7 @@
   font-weight: bold;
   font-style: italic;
 }
+
 /* Colours */
 /* line 16, ../sass/screen.scss */
 .cookies-box {
@@ -57,25 +63,30 @@
   width: 100%;
   z-index: 1000;
 }
+
 /* line 29, ../sass/screen.scss */
 .cookies-box.hide {
   display: none;
   transition: 1s ease-in-out;
 }
+
 /* line 34, ../sass/screen.scss */
 .cookies-box.large {
   height: 99%;
   transition: 1s ease-in-out;
   z-index: 1000;
 }
+
 /* line 40, ../sass/screen.scss */
 .cookies-box .close:before {
   content: 'Close ';
 }
+
 /* line 44, ../sass/screen.scss */
 .cookies-box .open:before {
   content: 'Read our ';
 }
+
 /* line 48, ../sass/screen.scss */
 .cookies-box iframe {
   border: none;
@@ -85,16 +96,19 @@
   transition: 1s ease-in-out;
   width: 95%;
 }
+
 /* line 56, ../sass/screen.scss */
 .cookies-box iframe.hide {
   display: none;
   transition: 1s ease-in-out;
 }
+
 /* line 62, ../sass/screen.scss */
 .cookies-box p {
   margin: 1rem;
   line-height: 1;
 }
+
 /* line 66, ../sass/screen.scss */
 .cookies-box p a {
   background-color: transparent !important;
@@ -105,10 +119,13 @@
   margin: 0;
   padding: 0;
 }
+
 /* line 74, ../sass/screen.scss */
-.cookies-box p a:hover, .cookies-box p a:focus {
+.cookies-box p a:hover,
+.cookies-box p a:focus {
   color: #00b9e1 !important;
 }
+
 /* line 81, ../sass/screen.scss */
 .cookies-box button {
   background-color: #5a6469;
@@ -120,8 +137,10 @@
   padding: 0.85em 2em;
   margin: 0;
 }
+
 /* line 90, ../sass/screen.scss */
-.cookies-box button:hover, .cookies-box button:focus {
+.cookies-box button:hover,
+.cookies-box button:focus {
   background-color: #77878e !important;
 }
 
@@ -133,16 +152,20 @@
   font-size: 1.5rem;
   padding: 3rem;
 }
+
 /* line 104, ../sass/screen.scss */
 .privacy-policy a {
   background-color: transparent;
   color: #00b9e1;
   text-decoration: none;
 }
+
 /* line 109, ../sass/screen.scss */
-.privacy-policy a:hover, .privacy-policy a:focus {
+.privacy-policy a:hover,
+.privacy-policy a:focus {
   color: #008fae;
 }
+
 /* line 115, ../sass/screen.scss */
 .privacy-policy h2 {
   font-family: 'KingsBureauGrot', sans-serif;
@@ -155,20 +178,24 @@
 .sla {
   background: #5a6469;
   color: #fefefe;
-  padding: 0.5rem !important;
+  padding: 0.5rem 0 !important;
   position: relative;
   text-align: center;
   width: 100%;
 }
+
 /* line 131, ../sass/screen.scss */
 .sla a {
   color: #cdd7dc !important;
   text-decoration: none;
 }
+
 /* line 135, ../sass/screen.scss */
-.sla a:hover, .sla a:focus {
+.sla a:hover,
+.sla a:focus {
   color: #00b9e1 !important;
 }
+
 /* line 141, ../sass/screen.scss */
 .sla p {
   margin: 0;
@@ -176,11 +203,13 @@
 }
 
 @media screen and (max-width: 768px) {
+
   /* line 148, ../sass/screen.scss */
   .privacy-policy {
     font-size: 1.2rem;
     padding: 1rem 0.5rem;
   }
+
   /* line 151, ../sass/screen.scss */
   .privacy-policy h2 {
     font-size: 1.5rem;
