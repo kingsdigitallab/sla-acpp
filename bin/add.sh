@@ -22,4 +22,4 @@ done
 
 URL="\"$URL\/$SCRIPT\""
 
-sed -i "s,<\/body>,<script defer=\"defer\" src=$URL type=\"text\/javascript\">$XML<\/script>\n<\/body>," $@
+sed -i "s,<\/body>,<script defer=\"defer\" src=$URL type=\"text\/javascript\">$XML<\/script>\n<\/body>,I" $@
