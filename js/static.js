@@ -48,7 +48,7 @@ function addStatic() {
   )
 
   a = document.createElement('a')
-  a.href = kdlUrl + '/our-work/archiving-sustainability/'
+  a.href = kdlUrl + 'our-work/archiving-sustainability/'
   a.innerHTML = 'sustainability'
 
   p.appendChild(a)
