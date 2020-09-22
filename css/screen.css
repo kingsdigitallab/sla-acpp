@@ -182,12 +182,15 @@
   position: relative;
   text-align: center;
   width: 100%;
+  text-shadow:none;
 }
 
 /* line 131, ../sass/screen.scss */
 .sla a {
   color: #cdd7dc !important;
-  text-decoration: none;
+  text-decoration: underline;
+  font-style: italic;
+  color: inherit;
 }
 
 /* line 135, ../sass/screen.scss */
