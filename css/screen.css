@@ -187,16 +187,18 @@
 
 /* line 131, ../sass/screen.scss */
 .sla a {
-  color: #cdd7dc !important;
   text-decoration: underline;
-  font-style: italic;
+  font-style: italic; !important
   color: inherit;
+  opacity:0.8;
+  font-weight: normal; !important
 }
 
 /* line 135, ../sass/screen.scss */
 .sla a:hover,
 .sla a:focus {
   color: #00b9e1 !important;
+  opacity:1;
 }
 
 /* line 141, ../sass/screen.scss */
