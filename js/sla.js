@@ -36,6 +36,7 @@ function addSLA() {
 
   let div = document.createElement('div')
   div.className = 'sla'
+  div.setAttribute('role', 'banner')
 
   let p = document.createElement('p')
   p.innerHTML = 'This site is '
@@ -62,13 +63,10 @@ function addCookieDisclaimer() {
   let div = document.createElement('div')
   div.className = 'cookies-box hide'
   div.id = 'cookie-disclaimer'
+  div.setAttribute('role', 'banner')
 
   let p = document.createElement('p')
-  p.innerHTML = 'We use cookies to track usage and preferences.'
-
-  div.appendChild(p)
-
-  p = document.createElement('p')
+  p.innerHTML = 'We use cookies to track usage and preferences. For more information, please read our'
 
   let a = document.createElement('a')
   a.className = 'button open'
@@ -94,6 +92,7 @@ function addCookieDisclaimer() {
   button.innerHTML = 'Accept'
   button.id = 'close-cookie-disclaimer'
   button.type = 'button'
+  button.setAttribute('aria-label', 'Accept')
 
   p.appendChild(button)
 
@@ -103,6 +102,7 @@ function addCookieDisclaimer() {
   iframe.className = 'hide'
   iframe.id = 'privacy-policy'
   iframe.src = getBasePath() + '/../html/privacy-policy.html'
+  iframe.setAttribute('title', 'Privacy Policy')
 
   div.append(iframe)
 
