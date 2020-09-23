@@ -91,7 +91,7 @@ function addCookieDisclaimer() {
 
   let button = document.createElement('button')
   button.className = 'button'
-  button.innerHTML = 'I Accept'
+  button.innerHTML = 'Accept'
   button.id = 'close-cookie-disclaimer'
   button.type = 'button'
 
