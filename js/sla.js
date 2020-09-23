@@ -1,6 +1,6 @@
 var body = document.getElementsByTagName('body')[0]
 
-body.onload = function() {
+body.onload = function () {
   addCSS()
 
   addSLA()
@@ -66,11 +66,12 @@ function addCookieDisclaimer() {
   div.setAttribute('role', 'banner')
 
   let p = document.createElement('p')
-  p.innerHTML = 'We use cookies to track usage and preferences. For more information, please read our'
+  p.innerHTML =
+    'We use cookies to track usage and preferences. For more information, please read our '
 
   let a = document.createElement('a')
   a.className = 'button open'
-  a.onclick = function() {
+  a.onclick = function () {
     document.getElementById('privacy-policy').classList.toggle('hide')
     document.getElementById('cookie-disclaimer').classList.toggle('large')
 
@@ -79,7 +80,7 @@ function addCookieDisclaimer() {
   }
   a.href = '#'
   a.id = 'show-privacy-policy'
-  a.innerHTML = 'Privacy &amp; Cookie Policy'
+  a.innerHTML = 'Privacy &amp; Cookie Policy.'
 
   p.appendChild(a)
 
@@ -121,7 +122,7 @@ function showCookieDisclaimer() {
     disclaimer.className = disclaimer.className.replace(/ hide/, '')
   }
 
-  document.getElementById('close-cookie-disclaimer').onclick = function() {
+  document.getElementById('close-cookie-disclaimer').onclick = function () {
     setStorageItem(key, value)
     disclaimer.className += ' hide'
   }
