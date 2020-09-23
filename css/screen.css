@@ -51,7 +51,7 @@
 /* Colours */
 /* line 16, ../sass/screen.scss */
 .cookies-box {
-  background: rgba(63, 70, 74, 0.9);
+  background: rgba(63, 70, 74, 0.95);
   bottom: 0;
   color: #fefefe;
   margin: 0;
@@ -82,11 +82,6 @@
   content: 'Close ';
 }
 
-/* line 44, ../sass/screen.scss */
-.cookies-box .open:before {
-  content: 'Read our ';
-}
-
 /* line 48, ../sass/screen.scss */
 .cookies-box iframe {
   border: none;
@@ -111,37 +106,42 @@
 
 /* line 66, ../sass/screen.scss */
 .cookies-box p a {
-  background-color: transparent !important;
-  border: none;
-  color: #cdd7dc !important;
-  float: none;
-  text-decoration: none !important;
-  margin: 0;
-  padding: 0;
+    background-color: transparent !important;
+    border: none;
+    color: #fff !important;
+    float: none;
+    text-decoration: underline;
+    font-style: italic;
+    margin: 0;
+    opacity: 0.8;
+    padding: 0;
 }
 
 /* line 74, ../sass/screen.scss */
 .cookies-box p a:hover,
 .cookies-box p a:focus {
   color: #00b9e1 !important;
+  opacity: 1;
 }
 
 /* line 81, ../sass/screen.scss */
 .cookies-box button {
-  background-color: #5a6469;
+  background-color: #fff;
   border-radius: 0;
   border: 0;
-  color: #fefefe !important;
+  color: #000 !important;
   cursor: pointer;
-  font-weight: normal !important;
-  padding: 0.85em 2em;
+  padding: 0.7em 1.5em;
   margin: 0;
+  text-transform:uppercase;
+  font-weight:bold;
 }
 
 /* line 90, ../sass/screen.scss */
 .cookies-box button:hover,
 .cookies-box button:focus {
-  background-color: #77878e !important;
+  color: #fff !important;
+  background-color: #363c3f !important;
 }
 
 /* line 97, ../sass/screen.scss */
@@ -188,10 +188,10 @@
 /* line 131, ../sass/screen.scss */
 .sla a {
   text-decoration: underline;
-  font-style: italic; !important
+  font-style: italic !important;
   color: inherit;
   opacity:0.8;
-  font-weight: normal; !important
+  font-weight: normal !important;
 }
 
 /* line 135, ../sass/screen.scss */
