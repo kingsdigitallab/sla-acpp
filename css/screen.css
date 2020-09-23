@@ -141,7 +141,7 @@
 .cookies-box button:hover,
 .cookies-box button:focus {
   color: #fff !important;
-  background-color: #363c3f !important;
+  background-color: #000 !important;
 }
 
 /* line 97, ../sass/screen.scss */
