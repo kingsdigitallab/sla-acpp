@@ -43,7 +43,7 @@ function addStatic() {
   p.appendChild(a)
   p.appendChild(
     document.createTextNode(
-      ', to offer public access to a legacy project. It has reduced functionality to improve '
+      ' to offer public access to a legacy project. It has reduced functionality to improve '
     )
   )
 
