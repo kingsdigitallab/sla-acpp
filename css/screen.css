@@ -102,6 +102,7 @@
 .cookies-box p {
   margin: 1rem;
   line-height: 1;
+  color: #fff !important;
 }
 
 /* line 66, ../sass/screen.scss */
@@ -177,7 +178,7 @@
 /* line 123, ../sass/screen.scss */
 .sla {
   background: #5a6469;
-  color: #fefefe;
+  color: #fff !important;
   padding: 0.5rem 0 !important;
   position: relative;
   text-align: center;
@@ -189,9 +190,10 @@
 .sla a {
   text-decoration: underline;
   font-style: italic !important;
-  color: inherit;
+  color: #fff !important;
   opacity:0.8;
   font-weight: normal !important;
+  display: inline-block;
 }
 
 /* line 135, ../sass/screen.scss */
@@ -205,6 +207,7 @@
 .sla p {
   margin: 0;
   padding: 0;
+  color: #fff !important;
 }
 
 @media screen and (max-width: 768px) {
