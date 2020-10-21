@@ -119,7 +119,7 @@ function addCookieDisclaimer() {
 
   div.append(iframe)
 
-  body.appendChild(div)
+  sla_target.appendChild(div)
 }
 
 function showCookieDisclaimer() {
