@@ -1,6 +1,18 @@
 var body = document.getElementsByTagName('body')[0]
+// Added by EH: Allows an optional target to be added to script tag
+// for appending sla html.  Will not work in pre-HTML5 browsers
+var script_tag = document.getElementById('sla_js');
+// Start as body for graceful failure
+var sla_target = body;
+if (script_tag){
+  // sla_target should be id
+  if (document.getElementById(script_tag.getAttribute("sla_target_id")) != null){
+    sla_target = document.getElementById(script_tag.getAttribute("sla_target_id"))
+  }
 
-body.onload = function() {
+}
+
+body.onload = function () {
   addCSS()
 
   addSLA()
@@ -36,6 +48,7 @@ function addSLA() {
 
   let div = document.createElement('div')
   div.className = 'sla'
+  div.setAttribute('role', 'banner')
 
   let p = document.createElement('p')
   p.innerHTML = 'This site is '
@@ -55,24 +68,22 @@ function addSLA() {
 
   div.appendChild(p)
 
-  body.appendChild(div)
+  sla_target.appendChild(div)
 }
 
 function addCookieDisclaimer() {
   let div = document.createElement('div')
   div.className = 'cookies-box hide'
   div.id = 'cookie-disclaimer'
+  div.setAttribute('role', 'banner')
 
   let p = document.createElement('p')
-  p.innerHTML = 'We use cookies to track usage and preferences.'
-
-  div.appendChild(p)
-
-  p = document.createElement('p')
+  p.innerHTML =
+    'We use cookies to track usage and preferences. For more information, please read our '
 
   let a = document.createElement('a')
   a.className = 'button open'
-  a.onclick = function() {
+  a.onclick = function () {
     document.getElementById('privacy-policy').classList.toggle('hide')
     document.getElementById('cookie-disclaimer').classList.toggle('large')
 
@@ -81,7 +92,7 @@ function addCookieDisclaimer() {
   }
   a.href = '#'
   a.id = 'show-privacy-policy'
-  a.innerHTML = 'Privacy &amp; Cookie Policy'
+  a.innerHTML = 'Privacy &amp; Cookie Policy.'
 
   p.appendChild(a)
 
@@ -91,9 +102,10 @@ function addCookieDisclaimer() {
 
   let button = document.createElement('button')
   button.className = 'button'
-  button.innerHTML = 'I Accept'
+  button.innerHTML = 'Accept'
   button.id = 'close-cookie-disclaimer'
   button.type = 'button'
+  button.setAttribute('aria-label', 'Accept')
 
   p.appendChild(button)
 
@@ -103,6 +115,7 @@ function addCookieDisclaimer() {
   iframe.className = 'hide'
   iframe.id = 'privacy-policy'
   iframe.src = getBasePath() + '/../html/privacy-policy.html'
+  iframe.setAttribute('title', 'Privacy Policy')
 
   div.append(iframe)
 
@@ -121,7 +134,7 @@ function showCookieDisclaimer() {
     disclaimer.className = disclaimer.className.replace(/ hide/, '')
   }
 
-  document.getElementById('close-cookie-disclaimer').onclick = function() {
+  document.getElementById('close-cookie-disclaimer').onclick = function () {
     setStorageItem(key, value)
     disclaimer.className += ' hide'
   }
