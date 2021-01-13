@@ -157,14 +157,15 @@
 /* line 104, ../sass/screen.scss */
 .privacy-policy a {
   background-color: transparent;
-  color: #00b9e1;
+  color: #0049d2;
   text-decoration: none;
 }
 
 /* line 109, ../sass/screen.scss */
 .privacy-policy a:hover,
 .privacy-policy a:focus {
-  color: #008fae;
+  opacity:0.7;
+  text-decoration:underline;
 }
 
 /* line 115, ../sass/screen.scss */
