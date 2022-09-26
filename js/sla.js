@@ -49,6 +49,7 @@ function addSLA() {
   let div = document.createElement('div')
   div.className = 'sla'
   div.setAttribute('role', 'banner')
+  div.setAttribute('aria-label', 'Site maintenance')
 
   let p = document.createElement('p')
   p.innerHTML = 'This site is '
@@ -76,6 +77,7 @@ function addCookieDisclaimer() {
   div.className = 'cookies-box hide'
   div.id = 'cookie-disclaimer'
   div.setAttribute('role', 'banner')
+  div.setAttribute('aria-label', 'Cookies & privacy')
 
   let p = document.createElement('p')
   p.innerHTML =
